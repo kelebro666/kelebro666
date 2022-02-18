@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Libre+Baskerville:ital@1&family=Roboto+Serif:ital,wght@1,300&display=swap');
+
+:root {
+    --main-color: #010101;
+    font-family: 'Roboto Serif', sans-serif;
+
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h1, h2, p, section, header, main, footer {
+    margin: 0;
+    padding: 0;
+}
+header nav .logo,
+header section h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+header nav .menu {
+    display: flex;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+
+}
+
+header nav .menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header nav .menu a:hover  {
+    border: 1px solid var(--main-color)
+
+}
+
+@media (min-width: 800px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+}
+
+header section {
+    background-image: url(../img/imgcoffe.jpg);
+    min-height: 400px;
+    background-size: cover;
+    background-position: center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .product-card img {
+    width: 100%;
+    display: block;
+}
+main .product-card .button-group {
+    display: flex;
+    justify-content: space-around;
+}
