@@ -3,6 +3,7 @@
 :root {
     --main-color: #010101;
     font-family: 'Roboto Serif', sans-serif;
+    scroll-behavior: smooth;
 
 }
 
@@ -72,3 +73,24 @@ main .product-card .button-group {
     display: flex;
     justify-content: space-around;
 }
+
+@media (min-width: 660px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 860px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
